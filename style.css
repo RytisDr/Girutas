@@ -1,20 +1,135 @@
+/*////////////////////////MOBILE INDEX*//////////////
+html,body {
+    margin: auto;
+}
+
 #girutasLogoAnim {
-  background: url(img/Logo-step1.png) no-repeat center center;
+    background: url(img/Logo-step2.png) no-repeat center center;
     background-size: contain;
-    width: 80vw;
-    height: 30vh;
+    width: 70vw;
+    height: 200px;
     max-width: 500px;
     max-height: 440px;
     margin: auto;
     margin-top: 20px;
-    bottom: 0;
-    animation: burn 3s ease-in-out infinite alternate;
+    animation: burn 2s ease-in-out infinite alternate;
 }
-@keyframes burn{
-       50%{
-            background-image: url(img/Logo-step2.png);
-        }
-    100%{
+
+@keyframes burn {
+    /* JEIGU REIKIA PAKEIST ANIMACIJA, REIKIA NUOMONĖS*/
+    /*50% {
+        background-image: url(img/Logo-step2.png);
+    }*/
+    100% {
         background-image: url(img/Logo-step3.png);
+    }
+}
+
+#lettering {
+    display: block;
+    margin: auto;
+    width: 70vw;
+    max-width: 400px;
+    margin-top: 20px;
+}
+
+#motto {
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 5vw;
+    text-align: center;
+}
+
+#indexNav a{
+    font-family: Varela;
+    font-size: 4vw;
+    display: grid;
+    grid-column: 1fr;
+    grid-row: 1fr 1fr 1fr;
+    text-align: center;
+    width: 80vw;
+    margin: auto;
+    text-decoration: none;
+    color: black;
+}
+
+#dirbame,
+#kontaktai {
+    border-top: 1px solid black;
+}
+/*//////////////////////////////APIE MUS MOBILE*/
+#toggle{
+    display: none;
+}
+
+label {
+    cursor: pointer;
+    font-size: 40px;
+    margin-left: 20px;
+    width: 10%;
+}
+
+#otherNav {
+    max-height: 0;
+    overflow: hidden;
+    position: absolute;
+    margin-top: 50px
+}
+ul{
+    list-style-type: none;
+}
+input:checked~#otherNav {
+    max-height: 20vh;
+    text-decoration: none;
+}
+
+#otherNav a {
+    text-decoration: none;
+    font-family: Roboto;
+    border: 1pt solid black;
+    border-radius: 10px;
+    font-size: 1.2em;
+    min-width: 15vw;
+}
+
+
+#otherNav a:active {
+    background-color: transparent;
+}
+#smallLogo{
+    width: 127px;
+    max-width: 500px;
+}
+
+#pageTop{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 150px;
+    border-bottom: 1pt solid black;
+    width: 100%;
+}
+
+footer {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    bottom: 0vh;
+    text-align: center;
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-size: 10pt;
+}
+
+
+/*FOOTER TO STAY DOWN*/
+
+@media all and (max-height: 550px),
+all and (min-width: 400px) {
+    footer {
+        position: relative;
+        margin-top: 50px;
     }
 }
