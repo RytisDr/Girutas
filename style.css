@@ -1,5 +1,7 @@
 /*////////////////////////MOBILE INDEX/////////////*/
-html, body {
+
+html,
+body {
     width: 100%;
     margin: 0;
 }
@@ -73,7 +75,7 @@ html, body {
     display: inline-block;
     cursor: pointer;
     margin-left: 20px;
-    margin-top: 10px;
+    margin-top: 20px;
     position: absolute;
     z-index: 5;
 }
@@ -143,25 +145,50 @@ li a {
 }
 
 
-/*//////////////////////////////APIE MUS MOBILE CONTENT///////////////*/
-#contentApie{
+/*CONTENT PADDING MOBILE*/
+
+#contentApie, #contentKontaktai{
     padding: 0px 20px;
 }
 
-h1 {
+
+/*//////////////////////////////APIE MUS MOBILE CONTENT///////////////*/
+
+#contentApie h1 {
     text-align: center;
     font-family: 'Roboto';
     font-weight: 500;
     font-size: 1.3em;
 }
-p{
+
+#contentApie p {
     font-family: 'Fira Sans';
     font-weight: 300;
     font-size: 1.03em;
 }
+
+
 /*////////////////////KONTAKTAI CONTENT///////////////////*/
+#contentKontaktai{
+    margin-top: 40px;
+}
+#contentKontaktai h1 {
+    font-family: 'Roboto';
+    font-size: 1.2em;
+    text-align: center;
+}
+#contentKontaktai h1:nth-child(2){
+    margin-bottom: 50px;
+}
 
-
+#map{
+    position: relative;
+    display: block;
+    margin: auto;
+    width: 80vw;
+    height: 25vh;
+    border: 0;
+}
 /*//////////////////////////////FOOTER///////////////////////// */
 
 footer {
@@ -174,6 +201,7 @@ footer {
     text-align: center;
     font-family: 'Fira Sans Extra Condensed', sans-serif;
     font-size: 10pt;
+    margin-top: 30px;
 }
 
 @media all and (max-height: 550px),
@@ -182,6 +210,9 @@ all and (min-width: 400px) {
         position: relative;
     }
 }
+
+
+/*CLASS FOR DONT DISPLAY*/
 
 .dontDisplay {
     display: none;
