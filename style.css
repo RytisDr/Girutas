@@ -1,10 +1,11 @@
-/*////////////////////////MOBILE INDEX*//////////////
-html,body {
-    margin: auto;
+/*////////////////////////MOBILE INDEX/////////////*/
+html, body {
+    width: 100%;
+    margin: 0;
 }
 
 #girutasLogoAnim {
-    background: url(img/Logo-step2.png) no-repeat center center;
+    background: url(img/Logo-step2.png) no-repeat center;
     background-size: contain;
     width: 70vw;
     height: 200px;
@@ -12,14 +13,11 @@ html,body {
     max-height: 440px;
     margin: auto;
     margin-top: 20px;
+    margin-bottom: 20px;
     animation: burn 2s ease-in-out infinite alternate;
 }
 
 @keyframes burn {
-    /* JEIGU REIKIA PAKEIST ANIMACIJA, REIKIA NUOMONĖS*/
-    /*50% {
-        background-image: url(img/Logo-step2.png);
-    }*/
     100% {
         background-image: url(img/Logo-step3.png);
     }
@@ -30,7 +28,6 @@ html,body {
     margin: auto;
     width: 70vw;
     max-width: 400px;
-    margin-top: 20px;
 }
 
 #motto {
@@ -41,7 +38,7 @@ html,body {
     text-align: center;
 }
 
-#indexNav a{
+#indexNav a {
     font-family: Varela;
     font-size: 4vw;
     display: grid;
@@ -58,58 +55,114 @@ html,body {
 #kontaktai {
     border-top: 1px solid black;
 }
-/*//////////////////////////////APIE MUS MOBILE*/
-#toggle{
-    display: none;
+
+
+/*///////////////////////NAVIGATION IN OTHER MOBILE PAGES/////////////*/
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 35px;
+    height: 4px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
 }
 
-label {
+.burger {
+    display: inline-block;
     cursor: pointer;
-    font-size: 40px;
     margin-left: 20px;
-    width: 10%;
+    margin-top: 10px;
+    position: absolute;
+    z-index: 5;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-7px, 6px);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
 }
 
 #otherNav {
-    max-height: 0;
-    overflow: hidden;
     position: absolute;
-    margin-top: 50px
+    margin-top: 20px;
+    margin-left: -22px;
 }
-ul{
+
+.menuList {
+    margin-top: 45px;
     list-style-type: none;
 }
-input:checked~#otherNav {
-    max-height: 20vh;
-    text-decoration: none;
+
+li {
+    border: 1pt solid black;
+    border-radius: 20px;
+    width: 33vw;
+    margin-bottom: 7px;
+    height: 27px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 25px;
 }
 
-#otherNav a {
+li a {
     text-decoration: none;
     font-family: Roboto;
-    border: 1pt solid black;
-    border-radius: 10px;
-    font-size: 1.2em;
-    min-width: 15vw;
+    font-size: 0.9em;
+    color: black;
 }
 
-
-#otherNav a:active {
-    background-color: transparent;
+#smallLogo {
+    margin: auto;
+    bottom: 0;
+    top: 0;
+    width: 40vw;
+    max-width: 150px;
+    cursor: pointer;
+    position: absolute;
+    grid-column: 2;
 }
-#smallLogo{
-    width: 127px;
-    max-width: 500px;
-}
 
-#pageTop{
-    margin-top: 20px;
+#pageTop {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 150px;
+    grid-template-columns: 3fr 2fr 1fr;
+    grid-template-rows: 200px;
     border-bottom: 1pt solid black;
+    position: relative;
     width: 100%;
+    margin-left: 0;
 }
+
+
+/*//////////////////////////////APIE MUS MOBILE CONTENT///////////////*/
+#contentApie{
+    padding: 0px 20px;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 1.3em;
+}
+p{
+    font-family: 'Fira Sans';
+    font-weight: 300;
+    font-size: 1.03em;
+}
+/*////////////////////KONTAKTAI CONTENT///////////////////*/
+
+
+/*//////////////////////////////FOOTER///////////////////////// */
 
 footer {
     position: absolute;
@@ -123,13 +176,13 @@ footer {
     font-size: 10pt;
 }
 
-
-/*FOOTER TO STAY DOWN*/
-
 @media all and (max-height: 550px),
 all and (min-width: 400px) {
     footer {
         position: relative;
-        margin-top: 50px;
     }
+}
+
+.dontDisplay {
+    display: none;
 }
