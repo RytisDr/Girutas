@@ -81,8 +81,8 @@ body {
 }
 
 .change .bar1 {
-    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-    transform: rotate(-45deg) translate(-7px, 6px);
+    -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+    transform: rotate(-45deg) translate(-6px, 6px);
 }
 
 .change .bar2 {
@@ -194,7 +194,7 @@ li {
 /*//////////////////////////DIRBAME SU CONTENT/////////////////*/
 
 #dirbameSuContent img {
-    width: 70vw;
+    width: 80vw;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -219,10 +219,57 @@ footer {
     margin-top: 30px;
 }
 
-@media all and (max-height: 600px),
-all and (min-width: 400px) {
+@media only screen and (max-height: 600px),
+only screen and (min-width: 400px) {
     footer {
         position: relative;
+    }
+}
+
+
+/*//////////////////////////////BREAKPOINT 1///////////////////////// */
+
+@media only screen and (min-width: 500px) {
+    /*///////////////////////INDEX/////////////*/
+    #girutasLogoAnim{
+     width: 300px;
+     height: 300px;
+    }
+    /*///////////////////////NAVIGATION IN OTHER MOBILE PAGES/////////////*/
+    li {
+        width: 40vw;
+        height: 40px;
+        line-height: 40px;
+        font-size: 1em;
+        margin-bottom: 11px;
+    }
+    .pageTop {
+        grid-template-rows: 280px;
+    }
+    #smallLogo {
+        max-width: 200px;
+        right: 60px;
+    }
+    footer {
+        position: absolute;
+    }
+    .bar1,
+    .bar2,
+    .bar3 {
+        width: 50px;
+        height: 6px;
+        margin: 8px 0;
+    }
+    .change .bar3 {
+        transform: rotate(45deg) translate(-13px, -14px);
+    }
+    .burger{
+        margin-left: 40px;
+        margin-top: 30px;
+    }
+    .menuList{
+        margin-top: 70px;
+        margin-left: 20px;
     }
 }
 
