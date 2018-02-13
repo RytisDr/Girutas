@@ -94,7 +94,7 @@ body {
     transform: rotate(45deg) translate(-8px, -8px);
 }
 
-#otherNav {
+.otherNav {
     position: absolute;
     margin-top: 20px;
     margin-left: -22px;
@@ -112,15 +112,13 @@ li {
     margin-bottom: 7px;
     height: 27px;
     text-align: center;
-    vertical-align: middle;
-    line-height: 25px;
-}
-
-li a {
+    line-height: 27px;
+    cursor: pointer;
     text-decoration: none;
     font-family: Roboto;
     font-size: 0.9em;
     color: black;
+    width: 33vw;
 }
 
 #smallLogo {
@@ -134,10 +132,10 @@ li a {
     grid-column: 2;
 }
 
-#pageTop {
+.pageTop {
     display: grid;
     grid-template-columns: 3fr 2fr 1fr;
-    grid-template-rows: 200px;
+    grid-template-rows: 180px;
     border-bottom: 1pt solid black;
     position: relative;
     width: 100%;
@@ -147,18 +145,22 @@ li a {
 
 /*CONTENT PADDING MOBILE*/
 
-#contentApie, #contentKontaktai{
+#contentApie,
+#contentKontaktai,
+#dirbameSuContent {
     padding: 0px 20px;
 }
 
 
 /*//////////////////////////////APIE MUS MOBILE CONTENT///////////////*/
 
-#contentApie h1 {
+#contentApie h1,
+#contentKontaktai h1,
+#dirbameSuContent h1 {
     text-align: center;
     font-family: 'Roboto';
     font-weight: 500;
-    font-size: 1.3em;
+    font-size: 1.2em;
 }
 
 #contentApie p {
@@ -169,26 +171,38 @@ li a {
 
 
 /*////////////////////KONTAKTAI CONTENT///////////////////*/
-#contentKontaktai{
+
+#contentKontaktai {
     margin-top: 40px;
 }
-#contentKontaktai h1 {
-    font-family: 'Roboto';
-    font-size: 1.2em;
-    text-align: center;
-}
-#contentKontaktai h1:nth-child(2){
+
+#contentKontaktai h1:nth-child(2) {
     margin-bottom: 50px;
 }
 
-#map{
-    position: relative;
+#map {
+    /*position: relative;*/
     display: block;
     margin: auto;
     width: 80vw;
     height: 25vh;
     border: 0;
 }
+
+
+/*//////////////////////////DIRBAME SU CONTENT/////////////////*/
+
+#dirbameSuContent img {
+    width: 70vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+
 /*//////////////////////////////FOOTER///////////////////////// */
 
 footer {
@@ -204,7 +218,7 @@ footer {
     margin-top: 30px;
 }
 
-@media all and (max-height: 550px),
+@media all and (max-height: 600px),
 all and (min-width: 400px) {
     footer {
         position: relative;
