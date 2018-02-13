@@ -108,7 +108,7 @@ body {
 li {
     border: 1pt solid black;
     border-radius: 20px;
-    width: 33vw;
+    width: 35vw;
     margin-bottom: 7px;
     height: 27px;
     text-align: center;
@@ -118,13 +118,14 @@ li {
     font-family: Roboto;
     font-size: 0.9em;
     color: black;
-    width: 33vw;
+    width: 37vw;
 }
 
 #smallLogo {
     margin: auto;
     bottom: 0;
     top: 0;
+    right: 20px;
     width: 40vw;
     max-width: 150px;
     cursor: pointer;

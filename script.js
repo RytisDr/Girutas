@@ -9,21 +9,21 @@ burger.addEventListener('click', function () {
 });
 ////////////LOGO SENDS TO HOMEPAGE///////////////
 const smallLogo = document.querySelector("#smallLogo").addEventListener('click', function () {
-    window.location = '/';
+    window.location = 'index.html';
 });
 ////////////NAVIGATION IN BURGER MENU///////////////
 const apieMus = document.querySelector(".apie").addEventListener('click', function () {
-    window.location = '/apie.html';
+    window.location = 'apie.html';
 });
 const kontaktai = document.querySelector(".kontaktai").addEventListener('click', function () {
-    window.location = '/kontaktai.html';
+    window.location = 'kontaktai.html';
 });
 const dirbameSu = document.querySelector(".dirbameSu").addEventListener('click', function () {
-    window.location = '/dirbame-su.html';
+    window.location = 'dirbame-su.html';
 });
 ////////////NAVIGATION IN DIRBAME SU WHEN CLICKED COMPANY LOGOS///////////////
 const danfoss = document.querySelector("#Danfoss").addEventListener('click', function () {
-    window.open('http://www.danfoss.lt/home/#/');
+ window.open('http://www.danfoss.lt/home/#/');
 })
 const isover = document.querySelector("#Isover").addEventListener('click', function () {
     window.open('https://www.isover.lt/');
