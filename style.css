@@ -2,10 +2,10 @@
 
 html,
 body {
-    width: 100%;
-    margin: 0;
+   margin:0;
+   padding:0;
+   height:100%;
 }
-
 #girutasLogoAnim {
     background: url(img/Logo-step2.png) no-repeat center;
     background-size: contain;
@@ -151,6 +151,14 @@ li {
 #dirbameSuContent {
     padding: 0px 20px;
 }
+#container {
+   min-height:100%;
+   position:relative;
+}
+#body {
+   padding:10px;
+   padding-bottom:60px;   /* Height of the footer */
+}
 
 
 /*//////////////////////////////APIE MUS MOBILE CONTENT///////////////*/
@@ -195,10 +203,12 @@ li {
 
 #dirbameSuContent img {
     width: 80vw;
+    max-width: 600px;
     display: block;
+    position: relative;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 10px;
+    margin-bottom: 60px;
     border: 1px solid black;
     cursor: pointer;
 }
@@ -207,23 +217,12 @@ li {
 /*//////////////////////////////FOOTER///////////////////////// */
 
 footer {
-    position: absolute;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-    bottom: 0vh;
+   position:absolute;
+   bottom: 0;
+   width:100%;
     text-align: center;
     font-family: 'Fira Sans Extra Condensed', sans-serif;
     font-size: 10pt;
-    margin-top: 30px;
-}
-
-@media only screen and (max-height: 600px),
-only screen and (min-width: 400px) {
-    footer {
-        position: relative;
-    }
 }
 
 
@@ -249,9 +248,6 @@ only screen and (min-width: 400px) {
     #smallLogo {
         max-width: 200px;
         right: 60px;
-    }
-    footer {
-        position: absolute;
     }
     .bar1,
     .bar2,
