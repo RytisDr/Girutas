@@ -155,10 +155,6 @@ li {
    min-height:100%;
    position:relative;
 }
-#body {
-   padding:10px;
-   padding-bottom:60px;   /* Height of the footer */
-}
 
 
 /*//////////////////////////////APIE MUS MOBILE CONTENT///////////////*/
@@ -220,9 +216,12 @@ footer {
    position:absolute;
    bottom: 0;
    width:100%;
+    height: 0px;
     text-align: center;
     font-family: 'Fira Sans Extra Condensed', sans-serif;
     font-size: 10pt;
+}
+#body {   /* Height of the footer */
 }
 
 
