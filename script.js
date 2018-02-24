@@ -21,7 +21,7 @@ const kontaktai = document.querySelector(".kontaktai").addEventListener('click',
 const dirbameSu = document.querySelector(".dirbameSu").addEventListener('click', function () {
     window.location = 'dirbame-su.html';
 });
-////////////NAVIGATION IN DIRBAME SU WHEN CLICKED COMPANY LOGOS///////////////
+////////////NAVIGATION TO OTHER SITES IN DIRBAME SU WHEN CLICKED COMPANY LOGOS///////////////
 const danfoss = document.querySelector("#Danfoss").addEventListener('click', function () {
  window.open('http://www.danfoss.lt/home/#/');
 })
@@ -36,4 +36,7 @@ const ibp = document.querySelector("#IBP").addEventListener('click', function ()
 })
 const reflex = document.querySelector("#Reflex").addEventListener('click', function () {
     window.open('http://www.reflex.de/en/');
+})
+const CG = document.querySelector("#CG").addEventListener('click', function() {
+    window.open('http://www.cgcavaletto.com/');
 })
