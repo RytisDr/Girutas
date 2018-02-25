@@ -369,8 +369,9 @@ footer {
     footer{
         bottom: 60px;
     }
+    /*ANIMATIONS FOR THE SLIDING ROOF*/
     .animationToApieMus{
-        animation: moveToApie 1s forwards ease-in-out;
+        animation: moveToApie 0.6s forwards ease-in-out;
     }
     @keyframes moveToApie{
         to{
@@ -378,7 +379,7 @@ footer {
         }
     }
     .animationToKontaktai{
-        animation: moveToKontaktai 1s forwards ease-in-out;
+        animation: moveToKontaktai 0.6s forwards ease-in-out;
     }
     @keyframes moveToKontaktai{
         to{
@@ -386,7 +387,7 @@ footer {
         }
     }
     .animationToDirbameSu{
-        animation: moveToDirbameSu 1s forwards ease-in-out;
+        animation: moveToDirbameSu 0.6s forwards ease-in-out;
     }
     @keyframes moveToDirbameSu{
         to{
