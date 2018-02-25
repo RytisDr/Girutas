@@ -333,6 +333,20 @@ footer {
         display: grid;
         grid-template-rows:1fr 1fr 1fr;
     }
+    #desktopNav{
+        width: 1000px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+    #desktopNav a{
+        font-family: 'Varela';
+        font-size: 20pt;
+        text-align: center;
+        cursor: pointer;
+        margin: auto;
+    }
     footer{
         bottom: 60px;
     }
