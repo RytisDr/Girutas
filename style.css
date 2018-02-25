@@ -144,9 +144,9 @@ li {
 
 /*CONTENT PADDING MOBILE*/
 
-#contentApie,
-#contentKontaktai,
-#dirbameSuContent {
+.contentApie,
+.contentKontaktai,
+.dirbameSuContent {
     padding: 0px 20px;
     margin-bottom: 20px;
 }
@@ -160,16 +160,16 @@ li {
 
 /*//////////////////////////////APIE MUS MOBILE CONTENT///////////////*/
 
-#contentApie h1,
-#contentKontaktai h1,
-#dirbameSuContent h1 {
+.contentApie h1,
+.contentKontaktai h1,
+.dirbameSuContent h1 {
     text-align: center;
     font-family: 'Roboto';
     font-weight: 500;
     font-size: 1.2em;
 }
 
-#contentApie p {
+.contentApie p {
     font-family: 'Fira Sans';
     font-weight: 300;
     font-size: 1.03em;
@@ -178,18 +178,18 @@ li {
 
 /*////////////////////KONTAKTAI CONTENT///////////////////*/
 
-#contentKontaktai {
+.contentKontaktai {
     margin-top: 40px;
 }
 
-#contentKontaktai h1:nth-child(2) {
+.contentKontaktai h1:nth-child(2) {
     margin-bottom: 50px;
 }
 
 #map {
     display: block;
     margin: auto;
-    width: 70vw;
+    width: 70vw;.
     height: 200px;
     border: 0;
     max-width: 700px;
@@ -198,7 +198,7 @@ li {
 
 /*//////////////////////////DIRBAME SU CONTENT/////////////////*/
 
-#dirbameSuContent img {
+.dirbameSuContent img {
     width: 80vw;
     max-width: 600px;
     display: block;
@@ -273,12 +273,12 @@ footer {
         margin-right: 25px;
     }
     /*////////////////////CONTENT PADDING///////////////////////////*/
-    #contentApie,
-    #contentKontaktai{
+    .contentApie,
+    .contentKontaktai{
         padding: 0vw 10vw;
     }
     /*DIRBAME CONTENT MARGINS*/
-    #dirbameSuContent img{
+    .dirbameSuContent img{
         margin-bottom: 50px;
     }
     /*MAP IN KONTAKTAI*/
@@ -297,7 +297,7 @@ footer {
     #smallLogo {
         left: 10vw;
     }
-    #contentApie{
+    .contentApie{
         padding: 0vw 20vw;
     }
 }
@@ -318,37 +318,80 @@ footer {
         display: none;
     }
     #girutasLogoAnim{
-        margin: 0;
+        height: 190px;
+        margin: auto;
         grid-column: 3;
     }
     #lettering{
         grid-row: 2;
         width: 50vw;
-        max-width: 650px;
+        max-width: 500px;
     }
     #motto{
+        font-size: 15pt;
         grid-row: 3;
     }
     #letterMotto{
+        margin-top: 10px;
+        margin-left: -21px;
         display: grid;
         grid-template-rows:1fr 1fr 1fr;
+    }
+    #navRoof{
+        grid-row: 1;
+        width: 130px;
+        position: absolute;
+        top: -40px;
+        left: 100px;
     }
     #desktopNav{
         width: 1000px;
         margin: auto;
+        margin-top: 50px;
+        position: relative;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
 
     }
     #desktopNav a{
         font-family: 'Varela';
-        font-size: 20pt;
+        font-size: 1.4em;
         text-align: center;
         cursor: pointer;
         margin: auto;
     }
+    .contentApie{
+        width: 360px;
+        margin: auto;
+        margin-top: 5vh;
+        font-size: 1.2em;
+    }
     footer{
         bottom: 60px;
+    }
+    .animationToApieMus{
+        animation: moveToApie 1s forwards ease-in-out;
+    }
+    @keyframes moveToApie{
+        to{
+        left: 100px;
+        }
+    }
+    .animationToKontaktai{
+        animation: moveToKontaktai 1s forwards ease-in-out;
+    }
+    @keyframes moveToKontaktai{
+        to{
+          left: 435px;
+        }
+    }
+    .animationToDirbameSu{
+        animation: moveToDirbameSu 1s forwards ease-in-out;
+    }
+    @keyframes moveToDirbameSu{
+        to{
+           left: 768px;
+        }
     }
 }
 
