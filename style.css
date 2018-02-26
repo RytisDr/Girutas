@@ -303,12 +303,17 @@ footer {
 }
 
 /*///////////////////////////////////////////////DESKTOP VERSION/BREAKPOINT//////////////////////////////////////////////////////////*/
-@media only screen and (min-width: 1000px){
+@media only screen and (min-width: 1100px){
     body{
         overflow: hidden;
+        border-left: 10vw solid #00668C;
+        border-right: 10vw solid #00668C;
     }
     #desktopIndex{
         display: inherit;
+    }
+    #container{
+        box-shadow: 0 5px 70px 0px #2B2B2B, 0 5px 70px 10px #2B2B2B;
     }
     #logo{
         display: grid;
@@ -318,22 +323,22 @@ footer {
         display: none;
     }
     #girutasLogoAnim{
-        height: 190px;
-        margin: auto;
+        height: 150px;
+        margin: 20px 0 0;
         grid-column: 3;
     }
     #lettering{
         grid-row: 2;
-        width: 50vw;
+        width: 40vw;
         max-width: 500px;
     }
     #motto{
-        font-size: 15pt;
+        font-size: 13pt;
         grid-row: 3;
     }
     #letterMotto{
-        margin-top: 10px;
-        margin-left: -21px;
+        margin-top: -35px;
+        margin-left: -51px;
         display: grid;
         grid-template-rows:1fr 1fr 1fr;
     }
@@ -347,7 +352,7 @@ footer {
     #desktopNav{
         width: 1000px;
         margin: auto;
-        margin-top: 50px;
+        margin-top: 40px;
         position: relative;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -355,16 +360,11 @@ footer {
     }
     #desktopNav a{
         font-family: 'Varela';
-        font-size: 1.4em;
+        font-size: 1.5vw;
+        font-weight: bolder;
         text-align: center;
         cursor: pointer;
         margin: auto;
-    }
-    .contentApie{
-        width: 360px;
-        margin: auto;
-        margin-top: 5vh;
-        font-size: 1.2em;
     }
     footer{
         bottom: 60px;
@@ -393,6 +393,24 @@ footer {
         to{
            left: 768px;
         }
+    }
+    .contentApie{
+        width: 450px;
+        margin: auto;
+        margin-top: 10vh;
+        font-size: 1.2em;
+    }
+    .contentKontaktai{
+        margin-top: 5vh;
+        display: grid;
+        grid-template-columns:2fr 1fr 1fr 2fr;
+        padding: 0;
+    }
+    #contactInfo{
+        grid-column-start: 2;
+    }
+    #map{
+        width: 400px
     }
 }
 

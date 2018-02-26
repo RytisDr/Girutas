@@ -47,9 +47,14 @@ const CG = document.querySelector(".CG").addEventListener('click', function () {
 const desktopNav = document.querySelectorAll("#desktopNav a");
 const roofIcon = document.querySelector("#navRoof");
 const contentApie = document.querySelector(".contentApie");
+const contentKontaktai = document.querySelector(".contentKontaktai");
+const contentDirbameSu = document.querySelector(".dirbameSuContent");
 desktopNav.forEach(function (elem) {
     elem.addEventListener('click', function () {
         if (elem == desktopNav[0]) {
+            contentDirbameSu.classList.add("dontDisplay");
+            contentApie.classList.remove("dontDisplay");
+            contentKontaktai.classList.add("dontDisplay");
             roofIcon.classList.add("animationToApieMus");
             roofIcon.addEventListener('animationend', function () {
                 roofIcon.classList.remove("animationToApieMus");
@@ -57,6 +62,8 @@ desktopNav.forEach(function (elem) {
             })
         }
         if (elem == desktopNav[1]) {
+            contentDirbameSu.classList.add("dontDisplay");
+            contentKontaktai.classList.remove("dontDisplay");
             contentApie.classList.add("dontDisplay");
             roofIcon.classList.add("animationToKontaktai");
             roofIcon.addEventListener('animationend', function () {
@@ -66,6 +73,9 @@ desktopNav.forEach(function (elem) {
         }
 
         if (elem == desktopNav[2]) {
+            contentDirbameSu.classList.remove("dontDisplay");
+            contentKontaktai.classList.add("dontDisplay");
+            contentApie.classList.add("dontDisplay");
             roofIcon.classList.add("animationToDirbameSu");
             roofIcon.addEventListener('animationend', function () {
                 roofIcon.classList.remove("animationToDirbameSu");
