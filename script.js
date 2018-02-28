@@ -25,7 +25,7 @@ if (mq.matches) {
     });
 }
 ////////////NAVIGATION TO OTHER SITES IN DIRBAME SU WHEN CLICKED COMPANY LOGOS///////////////
-/*const danfoss = document.querySelector(".Danfoss").addEventListener('click', function () {
+const danfoss = document.querySelector(".Danfoss").addEventListener('click', function () {
     window.open('http://www.danfoss.lt/home/#/');
 })
 const isover = document.querySelector(".Isover").addEventListener('click', function () {
@@ -42,16 +42,18 @@ const reflex = document.querySelector(".Reflex").addEventListener('click', funct
 })
 const CG = document.querySelector(".CG").addEventListener('click', function () {
     window.open('http://www.cgcavaletto.com/');
-})*/
+})
 ////////////ANIMATIONS FOR ROOF MOVEMENT AND PAGE SWITCH IN DESKTOP///////////////
 const desktopNav = document.querySelectorAll("#desktopNav a");
 const roofIcon = document.querySelector("#navRoof");
 const contentApie = document.querySelector(".contentApie");
 const contentKontaktai = document.querySelector(".contentKontaktai");
 const contentDirbameSu = document.querySelector(".dirbameSuContent");
+
 desktopNav.forEach(function (elem) {
     elem.addEventListener('click', function () {
         if (elem == desktopNav[0]) {
+            /*desktopNav[0].style.color = "#D98C1A";*/
             contentDirbameSu.classList.add("dontDisplay");
             contentApie.classList.remove("dontDisplay");
             contentKontaktai.classList.add("dontDisplay");
