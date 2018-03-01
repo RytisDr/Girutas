@@ -446,9 +446,7 @@ footer {
         margin-bottom: 40px;
         width: 300px;
     }
-}
-
-/*ADAPTING THE ANIMATION AND CONTACT INFO TO SMALLER VIEWPORT////////////////*/
+    /*ADAPTING THE ANIMATION AND CONTACT INFO TO SMALLER VIEWPORT////////////////*/
 
 @media only screen and (max-width: 1411px) {
     #desktopNav {
@@ -483,6 +481,9 @@ footer {
         grid-column-start: 30;
     }
 }
+
+}
+
 
 
 /*CLASS FOR NO DISPLAY*/
