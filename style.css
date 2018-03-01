@@ -286,6 +286,7 @@ footer {
     /*MAP IN KONTAKTAI*/
     #map {
         height: 300px;
+        width: 60vw;
     }
 }
 
@@ -448,7 +449,7 @@ footer {
     }
     /*ADAPTING THE ANIMATION AND CONTACT INFO TO SMALLER VIEWPORT////////////////*/
 
-@media only screen and (max-width: 1411px) {
+@media only screen and (min-width: 1100px) and (max-width: 1411px) {
     #desktopNav {
         width: 700px;
     }
