@@ -49,7 +49,7 @@ const roofIcon = document.querySelector("#navRoof");
 const contentApie = document.querySelector(".contentApie");
 const contentKontaktai = document.querySelector(".contentKontaktai");
 const contentDirbameSu = document.querySelector(".dirbameSuContent");
-
+let mq1 = window.matchMedia("(max-width: 1411px)");
 desktopNav.forEach(function (elem) {
     elem.addEventListener('click', function () {
         if (elem == desktopNav[0]) {
@@ -61,6 +61,9 @@ desktopNav.forEach(function (elem) {
             roofIcon.addEventListener('animationend', function () {
                 roofIcon.classList.remove("animationToApieMus");
                 roofIcon.style.left = "100px";
+                if (mq1.matches) {
+                    roofIcon.style.left = "66px";
+                }
             })
         }
         if (elem == desktopNav[1]) {
@@ -71,6 +74,9 @@ desktopNav.forEach(function (elem) {
             roofIcon.addEventListener('animationend', function () {
                 roofIcon.classList.remove("animationToKontaktai");
                 roofIcon.style.left = "435px";
+                if(mq1.matches){
+                    roofIcon.style.left = "299px";
+                }
             })
         }
 
@@ -82,6 +88,9 @@ desktopNav.forEach(function (elem) {
             roofIcon.addEventListener('animationend', function () {
                 roofIcon.classList.remove("animationToDirbameSu");
                 roofIcon.style.left = "768px";
+                if(mq1.matches){
+                    roofIcon.style.left = "533px";
+                }
             })
         }
     })

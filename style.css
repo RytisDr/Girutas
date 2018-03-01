@@ -310,14 +310,9 @@ footer {
 
 @media only screen and (min-width: 1100px) {
     body {
-        overflow: hidden;
+        overflow: auto;
         border-left: 15vw solid #00668C;
         border-right: 15vw solid #00668C;
-    }
-    @media only screen and (max-height: 800px) {
-        body {
-            overflow: auto;
-        }
     }
     #desktopIndex {
         display: inherit;
@@ -325,8 +320,9 @@ footer {
 
     #container {
         min-height: 100vh;
-        box-shadow: 0 5px 70px 0px #2B2B2B, 0 5px 70px 10px #2B2B2B;
+        box-shadow: 0 5px 50px 0px #2B2B2B, 0 5px 50px 10px #2B2B2B;
     }
+    /*Header//////////////*/
     #logo {
         display: grid;
         grid-template-columns: repeat(6, 1fr);
@@ -354,6 +350,7 @@ footer {
         display: grid;
         grid-template-rows: 1fr 1fr 1fr;
     }
+    /*NAVIGATION/////////////////*/
     #navRoof {
         grid-row: 1;
         width: 130px;
@@ -368,8 +365,8 @@ footer {
         position: relative;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-
     }
+
     #desktopNav a {
         font-family: 'Varela';
         font-size: 1.5vw;
@@ -379,23 +376,9 @@ footer {
         position: relative;
         margin: auto;
     }
-    /*#desktopNav a:after, #desktopNav a:after, #desktopNav a:after {
-        content: "";
-        background: black;
-        position: absolute;
-        top: 0;
-        left: 3px;
-        height: 2px;
-        width: 127px;
-    }
-    #desktopNav a:nth-child(2):after{
-        left: -2px;
-        width: 127px;
-    }
-    #desktopNav a:nth-child(4):after{
-        left: 15px;
-        width: 127px;
-    }*/
+
+
+
     footer {
         bottom: 60px;
     }
@@ -424,6 +407,7 @@ footer {
             left: 768px;
         }
     }
+    /*CONTENT STYLING//////////////*/
     .contentApie {
         padding: auto;
         font-size: 1.2em;
@@ -438,7 +422,7 @@ footer {
         padding: 0;
     }
     #contactInfo {
-        grid-column: 15/22;
+        grid-column: 15/24;
     }
     #map {
         width: 27vw;
@@ -462,13 +446,42 @@ footer {
         margin-bottom: 40px;
         width: 300px;
     }
-    /* #dirbameH1{
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: -60px;
-        z-index: 5;
-    }*/
+}
+
+/*ADAPTING THE ANIMATION AND CONTACT INFO TO SMALLER VIEWPORT////////////////*/
+
+@media only screen and (max-width: 1411px) {
+    #desktopNav {
+        width: 700px;
+    }
+    #navRoof {
+        left: 66px;
+        width: 100px;
+        top: -30px;
+    }
+
+    @keyframes moveToApie {
+        to {
+            left: 66px;
+        }
+    }
+    @keyframes moveToKontaktai {
+        to {
+            left: 299px;
+        }
+    }
+    @keyframes moveToDirbameSu {
+        to {
+            left: 533px;
+        }
+    }
+    #contactInfo {
+        grid-column: 13/24;
+    }
+    #map {
+        width: 25vw;
+        grid-column-start: 30;
+    }
 }
 
 
