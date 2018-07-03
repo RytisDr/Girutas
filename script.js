@@ -3,7 +3,7 @@ const burger = document.querySelector(".burger");
 const menuList = document.querySelector(".menuList");
 const mq = window.matchMedia("(max-width: 1000px)");
 /////////////////////////////////BURGER MENU////////////////
-if (mq.matches) {
+if (mq.matches && window.location.pathname != '/index.html') {
     burger.addEventListener('click', function () {
         burger.classList.toggle("change");
         menuList.classList.toggle("dontDisplay");
@@ -25,6 +25,7 @@ if (mq.matches) {
     });
 }
 ////////////NAVIGATION TO OTHER SITES IN DIRBAME SU WHEN CLICKED COMPANY LOGOS///////////////
+if(window.location.href.includes("dirbame-su")){
 const danfoss = document.querySelector(".Danfoss").addEventListener('click', function () {
     window.open('http://www.danfoss.lt/home/#/');
 })
@@ -43,6 +44,7 @@ const reflex = document.querySelector(".Reflex").addEventListener('click', funct
 const CG = document.querySelector(".CG").addEventListener('click', function () {
     window.open('http://www.cgcavaletto.com/');
 })
+}
 ////////////ANIMATIONS FOR ROOF MOVEMENT AND PAGE SWITCH IN DESKTOP///////////////
 const desktopNav = document.querySelectorAll("#desktopNav a");
 const roofIcon = document.querySelector("#navRoof");
