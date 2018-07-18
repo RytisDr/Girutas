@@ -411,11 +411,11 @@ footer {
     }
     /*CONTENT STYLING//////////////*/
     .contentApie {
-        padding: auto;
         font-size: 1.2em;
+        padding: 0 15vw;
     }
     .contentApie h1 {
-        text-align: center
+        text-align: center;
     }
     .contentKontaktai {
         margin-top: 15vh;

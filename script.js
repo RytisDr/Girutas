@@ -7,28 +7,19 @@ const mq = window.matchMedia("(max-width: 1100px)");
 window.addEventListener('resize', checkSize)
 function checkSize() {
     if (window.innerWidth > 1100) {
-        window.removeEventListener('resize', checkSize)
         switchPages();
-       console.log("resized")
-    }
-}
-function switchPages(){
-   if(window.location.href !== 'index.html'){
-       window.location.href='index.html'
-   }
-}
-/*function checkSize() {
-    if (window.innerWidth > 1100) {
-        window.removeEventListener('resize', checkSize)
-        sendToDesktop();
 
     }
 }
-function sendToDesktop(){
-    window.location.href="index.html"
-}*/
+function switchPages(){
+   if(window.location.pathname.indexOf('index') === -1){
+       window.location.href='index.html'
+       window.removeEventListener('resize', checkSize())
+   }
+}
+
 /////////////////////////////////BURGER MENU////////////////
-if (window.location.pathname !== '/index.html' && mq.matches) {
+if (window.location.pathname.indexOf('index') === -1 && mq.matches) {
     burger.addEventListener('click', function () {
         burger.classList.toggle("change");
         menuList.classList.toggle("dontDisplay");
@@ -50,12 +41,12 @@ if (window.location.pathname !== '/index.html' && mq.matches) {
     });
 }
 ////////////NAVIGATION TO OTHER SITES IN DIRBAME SU WHEN CLICKED COMPANY LOGOS///////////////
-if (window.location.href.includes("dirbame-su")) {
+if(window.location.pathname.includes("dirbame-su")){
     const danfoss = document.querySelector(".Danfoss").addEventListener('click', function () {
-        window.open('http://www.danfoss.lt/home/#/');
+        window.open('files/Danfoss kainynas_2018.pdf');
     })
     const isover = document.querySelector(".Isover").addEventListener('click', function () {
-        window.open('https://www.isover.lt/');
+        window.open('files/TI_kainynas_2018kovas.pdf');
     })
     const oventrop = document.querySelector(".Oventrop").addEventListener('click', function () {
         window.open('https://www.oventrop.com/lt-LT');
