@@ -13,7 +13,7 @@ function checkSize() {
 }
 function switchPages(){
    if(window.location.pathname.indexOf('index') === -1){
-       window.location.href='index.html'
+       window.location.href='/'
        window.removeEventListener('resize', checkSize())
    }
 }
@@ -27,17 +27,17 @@ if (window.location.pathname.indexOf('index') === -1 && mq.matches) {
 
     ////////////LOGO SENDS TO HOMEPAGE///////////////
     const smallLogo = document.querySelector("#smallLogo").addEventListener('click', function () {
-        window.location = 'index.html';
+        window.location = '/';
     });
     ////////////NAVIGATION IN BURGER MENU///////////////
     const apieMus = document.querySelector(".apie").addEventListener('click', function () {
-        window.location = 'apie.html';
+        window.location = 'apie';
     });
     const kontaktai = document.querySelector(".kontaktai").addEventListener('click', function () {
-        window.location = 'kontaktai.html';
+        window.location = 'kontaktai';
     });
     const dirbameSu = document.querySelector(".dirbameSu").addEventListener('click', function () {
-        window.location = 'dirbame-su.html';
+        window.location = 'dirbame-su';
     });
 }
 ////////////NAVIGATION TO OTHER SITES IN DIRBAME SU WHEN CLICKED COMPANY LOGOS///////////////
