@@ -186,7 +186,10 @@ li {
 }
 
 .contentKontaktai h1:nth-child(2) {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+}
+#time{
+    margin: -10px auto 30px;
 }
 
 #map {
@@ -424,7 +427,7 @@ footer {
         padding: 0;
     }
     #contactInfo {
-        grid-column: 15/24;
+        grid-column: 13/26;
     }
     #map {
         width: 27vw;
