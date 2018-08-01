@@ -1,25 +1,26 @@
 "use strict";
 const burger = document.querySelector(".burger");
 const menuList = document.querySelector(".menuList");
-const mq = window.matchMedia("(max-width: 1100px)");
+const mobile = window.matchMedia("(max-width: 1099px)");
+const desktop = window.matchMedia("(min-width: 1100px)");
+let inDesktopPage = false;
+let inMobilePage = false;
 
 ///////CHECK THE SIZE AND REFRESH TO BREAKPOINT IF RESIZED
-window.addEventListener('resize', checkSize)
-function checkSize() {
-    if (window.innerWidth > 1100) {
-        switchPages();
-
+window.addEventListener('resize', refresh)
+function refresh() {
+    if (mobile.matches && inDesktopPage || desktop.matches && inMobilePage) {
+        window.location.href="/";
     }
 }
-function switchPages(){
-   if(window.location.pathname.indexOf('index') === -1){
-       window.location.href='/'
-       window.removeEventListener('resize', checkSize())
-   }
+if(desktop.matches){
+    inDesktopPage = true;
 }
-
+if(mobile.matches){
+    inMobilePage = true;
+}
 /////////////////////////////////BURGER MENU////////////////
-if (window.location.pathname.indexOf('index') === -1 && mq.matches) {
+if (document.body.contains(burger) && mobile.matches) {
     burger.addEventListener('click', function () {
         burger.classList.toggle("change");
         menuList.classList.toggle("dontDisplay");
@@ -41,7 +42,8 @@ if (window.location.pathname.indexOf('index') === -1 && mq.matches) {
     });
 }
 ////////////NAVIGATION TO OTHER SITES IN DIRBAME SU WHEN CLICKED COMPANY LOGOS///////////////
-if(window.location.pathname.includes("dirbame-su")){
+let dirbameSuContent = document.querySelector(".dirbameSuContent")
+if(document.body.contains(dirbameSuContent)){
     const danfoss = document.querySelector(".Danfoss").addEventListener('click', function () {
         window.open('files/Danfoss kainynas_2018.pdf');
     })
