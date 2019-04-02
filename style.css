@@ -2,497 +2,490 @@
 
 html,
 body {
-    margin: 0;
-    padding: 0;
-    min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
 }
 
 #desktopIndex {
-    display: none;
+  display: none;
 }
 
 #girutasLogoAnim {
-    background: url(img/Logo-step2.png) no-repeat center;
-    background-size: contain;
-    width: 70vw;
-    height: 200px;
-    max-width: 500px;
-    max-height: 440px;
-    margin: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    animation: burn 2s ease-in-out infinite alternate;
+  background: url(img/Logo-step2.png) no-repeat center;
+  background-size: contain;
+  width: 70vw;
+  height: 200px;
+  max-width: 500px;
+  max-height: 440px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  animation: burn 2s ease-in-out infinite alternate;
 }
 
 @keyframes burn {
-    100% {
-        background-image: url(img/Logo-step3.png);
-    }
+  100% {
+    background-image: url(img/Logo-step3.png);
+  }
 }
 
 #lettering {
-    display: block;
-    margin: auto;
-    width: 70vw;
-    max-width: 400px;
+  display: block;
+  margin: auto;
+  width: 70vw;
+  max-width: 400px;
 }
 
 #motto {
-    font-family: 'Fira Sans Extra Condensed', sans-serif;
-    font-weight: 300;
-    font-style: italic;
-    font-size: 5vw;
-    text-align: center;
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 5vw;
+  text-align: center;
 }
 
 #indexNav a {
-    font-family: Varela;
-    font-size: 4vw;
-    display: grid;
-    grid-column: 1fr;
-    grid-row: 1fr 1fr 1fr;
-    text-align: center;
-    width: 80vw;
-    margin: auto;
-    text-decoration: none;
-    color: black;
+  font-family: Varela;
+  font-size: 4vw;
+  display: grid;
+  grid-column: 1fr;
+  grid-row: 1fr 1fr 1fr;
+  text-align: center;
+  width: 80vw;
+  margin: auto;
+  text-decoration: none;
+  color: black;
 }
 
 #dirbame,
 #kontaktai {
-    border-top: 1px solid black;
+  border-top: 1px solid black;
 }
-
 
 /*///////////////////////NAVIGATION IN OTHER MOBILE PAGES/////////////*/
 
 .bar1,
 .bar2,
 .bar3 {
-    width: 35px;
-    height: 4px;
-    background-color: #333;
-    margin: 6px 0;
-    transition: 0.4s;
+  width: 35px;
+  height: 4px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
 }
 
 .burger {
-    cursor: pointer;
-    right: 15px;
-    margin-top: 15px;
-    position: absolute;
-    z-index: 5;
+  cursor: pointer;
+  right: 15px;
+  margin-top: 15px;
+  position: absolute;
+  z-index: 5;
 }
 
 .change .bar1 {
-    -webkit-transform: rotate(-45deg) translate(-6px, 6px);
-    transform: rotate(-45deg) translate(-6px, 6px);
+  -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+  transform: rotate(-45deg) translate(-6px, 6px);
 }
 
 .change .bar2 {
-    opacity: 0;
+  opacity: 0;
 }
 
 .change .bar3 {
-    -webkit-transform: rotate(45deg) translate(-8px, -8px);
-    transform: rotate(45deg) translate(-8px, -8px);
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
 }
 
 .otherNav {
-    position: absolute;
-    margin-top: 20px;
-    right: 15px;
+  position: absolute;
+  margin-top: 20px;
+  right: 15px;
 }
 
 .menuList {
-    margin-top: 40px;
-    list-style-type: none;
+  margin-top: 40px;
+  list-style-type: none;
 }
 
 li {
-    border: 1pt solid black;
-    border-radius: 20px;
-    width: 35vw;
-    margin-bottom: 7px;
-    height: 27px;
-    text-align: center;
-    line-height: 27px;
-    cursor: pointer;
-    text-decoration: none;
-    font-family: Roboto;
-    font-size: 0.9em;
-    color: black;
-    width: 37vw;
+  border: 1pt solid black;
+  border-radius: 20px;
+  width: 35vw;
+  margin-bottom: 7px;
+  height: 27px;
+  text-align: center;
+  line-height: 27px;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: Roboto;
+  font-size: 0.9em;
+  color: black;
+  width: 37vw;
 }
 
 #smallLogo {
-    margin: auto;
-    bottom: 0;
-    top: 0;
-    left: 20px;
-    width: 42vw;
-    max-width: 150px;
-    cursor: pointer;
-    position: absolute;
+  margin: auto;
+  bottom: 0;
+  top: 0;
+  left: 20px;
+  width: 42vw;
+  max-width: 150px;
+  cursor: pointer;
+  position: absolute;
 }
 
 .pageTop {
-    height: 180px;
-    border-bottom: 1pt solid black;
-    position: relative;
-    width: 100%;
+  height: 180px;
+  border-bottom: 1pt solid black;
+  position: relative;
+  width: 100%;
 }
-
 
 /*CONTENT PADDING MOBILE*/
 
 .contentApie,
 .contentKontaktai,
 .dirbameSuContent {
-    padding: 0px 20px;
-    margin-bottom: 20px;
+  padding: 0px 20px;
+  margin-bottom: 20px;
 }
 
 #container {
-    min-height: 100%;
-    position: relative;
-    padding-bottom: 20px;
+  min-height: 100%;
+  position: relative;
+  padding-bottom: 20px;
 }
-
 
 /*//////////////////////////////APIE MUS MOBILE CONTENT///////////////*/
 
 .contentApie h1,
 .contentKontaktai h1,
 .dirbameSuContent h1 {
-    text-align: center;
-    font-family: 'Roboto';
-    font-weight: 500;
-    font-size: 1.2em;
+  text-align: center;
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 1.2em;
 }
 
 .contentApie p {
-    font-family: 'Fira Sans';
-    font-weight: 300;
-    font-size: 1.03em;
-    text-align: center;
+  font-family: "Fira Sans";
+  font-weight: 300;
+  font-size: 1.03em;
+  text-align: center;
 }
-
 
 /*////////////////////KONTAKTAI CONTENT///////////////////*/
 
 .contentKontaktai {
-    margin-top: 40px;
+  margin-top: 40px;
 }
 
 .contentKontaktai h1:nth-child(2) {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
-#time{
-    margin: -10px auto 30px;
+#time {
+  margin: -10px auto 30px;
 }
 
 #map {
-    display: block;
-    margin: auto;
-    width: 70vw;
-    height: 200px;
-    border: 0;
-    max-width: 700px;
+  display: block;
+  margin: auto;
+  width: 70vw;
+  height: 200px;
+  border: 0;
+  max-width: 700px;
 }
-
 
 /*//////////////////////////DIRBAME SU CONTENT/////////////////*/
 
 .dirbameSuContent img {
-    width: 80vw;
-    max-width: 600px;
-    display: block;
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 30px;
-    border: 1px solid black;
-    cursor: pointer;
+  width: 80vw;
+  max-width: 600px;
+  display: block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  border: 1px solid black;
+  cursor: pointer;
 }
-
 
 /*//////////////////////////////FOOTER///////////////////////// */
 
 footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 0px;
-    text-align: center;
-    font-family: 'Fira Sans Extra Condensed', sans-serif;
-    font-size: 10pt;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 0px;
+  text-align: center;
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+  font-size: 10pt;
 }
 
 /*//////////////////////////////BREAKPOINT 1 PHABLET/TABLET///////////////////////// */
 
 @media only screen and (min-width: 500px) {
-    /*///////////////////////INDEX/////////////*/
-    #girutasLogoAnim {
-        width: 300px;
-        height: 300px;
-    }
-    #motto {
-        font-size: 20pt;
-    }
-    #indexNav a {
-        width: 70vw;
-        font-size: 20pt;
-    }
-    /*///////////////////////NAVIGATION /////////////*/
-    li {
-        width: 40vw;
-        height: 40px;
-        line-height: 40px;
-        font-size: 1em;
-        margin-bottom: 11px;
-    }
-    .pageTop {
-        height: 280px;
-    }
-    #smallLogo {
-        max-width: 200px;
-        margin: auto;
-        left: 6vw;
-    }
-    .bar1,
-    .bar2,
-    .bar3 {
-        width: 50px;
-        height: 6px;
-        margin: 8px 0;
-    }
-    .change .bar3 {
-        transform: rotate(45deg) translate(-13px, -14px);
-    }
-    .burger {
-        margin-top: 30px;
-        right: 40px;
-    }
-    .menuList {
-        margin-top: 70px;
-        margin-right: 25px;
-    }
-    /*////////////////////CONTENT PADDING///////////////////////////*/
-    .contentApie,
-    .contentKontaktai {
-        padding: 0vw 10vw;
-    }
-    /*DIRBAME CONTENT MARGINS*/
-    .dirbameSuContent img {
-        margin-bottom: 50px;
-    }
-    /*MAP IN KONTAKTAI*/
-    #map {
-        height: 300px;
-        width: 60vw;
-    }
+  /*///////////////////////INDEX/////////////*/
+  #girutasLogoAnim {
+    width: 300px;
+    height: 300px;
+  }
+  #motto {
+    font-size: 20pt;
+  }
+  #indexNav a {
+    width: 70vw;
+    font-size: 20pt;
+  }
+  /*///////////////////////NAVIGATION /////////////*/
+  li {
+    width: 40vw;
+    height: 40px;
+    line-height: 40px;
+    font-size: 1em;
+    margin-bottom: 11px;
+  }
+  .pageTop {
+    height: 280px;
+  }
+  #smallLogo {
+    max-width: 200px;
+    margin: auto;
+    left: 6vw;
+  }
+  .bar1,
+  .bar2,
+  .bar3 {
+    width: 50px;
+    height: 6px;
+    margin: 8px 0;
+  }
+  .change .bar3 {
+    transform: rotate(45deg) translate(-13px, -14px);
+  }
+  .burger {
+    margin-top: 30px;
+    right: 40px;
+  }
+  .menuList {
+    margin-top: 70px;
+    margin-right: 25px;
+  }
+  /*////////////////////CONTENT PADDING///////////////////////////*/
+  .contentApie,
+  .contentKontaktai {
+    padding: 0vw 10vw;
+  }
+  /*DIRBAME CONTENT MARGINS*/
+  .dirbameSuContent img {
+    margin-bottom: 50px;
+  }
+  /*MAP IN KONTAKTAI*/
+  #map {
+    height: 300px;
+    width: 60vw;
+  }
 }
 
 /*EXTRA BREAKPOINT FOR MARGINS AND PADDING OF TOP MENU AND CONTENT*/
 
 @media only screen and (min-width: 607px) {
-    .burger {
-        right: 10vw;
-    }
-    .menuList {
-        margin-right: 10vw;
-    }
-    #smallLogo {
-        left: 10vw;
-    }
-    .contentApie {
-        padding: 0vw 20vw;
-    }
+  .burger {
+    right: 10vw;
+  }
+  .menuList {
+    margin-right: 10vw;
+  }
+  #smallLogo {
+    left: 10vw;
+  }
+  .contentApie {
+    padding: 0vw 20vw;
+  }
 }
 
 /*///////////////////////////////////////////////DESKTOP VERSION/BREAKPOINT//////////////////////////////////////////////////////////*/
 
 @media only screen and (min-width: 1100px) {
-    body {
-        overflow: auto;
-        border-left: 15vw solid #00668C;
-        border-right: 15vw solid #00668C;
-    }
-    #desktopIndex {
-        display: inherit;
-    }
+  body {
+    overflow: auto;
+    border-left: 15vw solid #00668c;
+    border-right: 15vw solid #00668c;
+  }
+  #desktopIndex {
+    display: inherit;
+  }
 
-    #container {
-        min-height: 100vh;
-        box-shadow: 0 5px 50px 0px #2B2B2B, 0 5px 50px 10px #2B2B2B;
-    }
-    /*Header//////////////*/
-    #logo {
-        display: grid;
-        grid-template-columns: repeat(6, 1fr);
-    }
-    #indexNav {
-        display: none;
-    }
-    #girutasLogoAnim {
-        height: 150px;
-        margin: 20px 0 0;
-        grid-column: 3;
-    }
-    #lettering {
-        grid-row: 2;
-        width: 40vw;
-        max-width: 500px;
-    }
-    #motto {
-        font-size: 13pt;
-        grid-row: 3;
-    }
-    #letterMotto {
-        margin-top: -35px;
-        margin-left: -51px;
-        display: grid;
-        grid-template-rows: 1fr 1fr 1fr;
-    }
-    /*NAVIGATION/////////////////*/
-    #navRoof {
-        grid-row: 1;
-        width: 130px;
-        position: absolute;
-        top: -40px;
-        left: 100px;
-    }
-    #desktopNav {
-        width: 1000px;
-        margin: auto;
-        margin-top: 40px;
-        position: relative;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-    }
+  #container {
+    min-height: 100vh;
+    box-shadow: 0 5px 50px 0px #2b2b2b, 0 5px 50px 10px #2b2b2b;
+  }
+  /*Header//////////////*/
+  #logo {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+  }
+  #indexNav {
+    display: none;
+  }
+  #girutasLogoAnim {
+    height: 150px;
+    margin: 20px 0 0;
+    grid-column: 3;
+  }
+  #lettering {
+    grid-row: 2;
+    width: 40vw;
+    max-width: 500px;
+  }
+  #motto {
+    font-size: 13pt;
+    grid-row: 3;
+  }
+  #letterMotto {
+    margin-top: -35px;
+    margin-left: -51px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+  /*NAVIGATION/////////////////*/
+  #navRoof {
+    grid-row: 1;
+    width: 130px;
+    position: absolute;
+    top: -40px;
+    left: 100px;
+  }
+  #desktopNav {
+    width: 1000px;
+    margin: auto;
+    margin-top: 40px;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
 
-    #desktopNav a {
-        font-family: 'Varela';
-        font-size: 1.5vw;
-        font-weight: bolder;
-        text-align: center;
-        cursor: pointer;
-        position: relative;
-        margin: auto;
-    }
+  #desktopNav a {
+    font-family: "Varela";
+    font-size: 1.5vw;
+    font-weight: bolder;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    margin: auto;
+  }
 
-
-
-    footer {
-        bottom: 60px;
+  footer {
+    bottom: 60px;
+  }
+  /*ANIMATIONS FOR THE SLIDING ROOF*/
+  .animationToApieMus {
+    animation: moveToApie 0.6s forwards ease-in-out;
+  }
+  @keyframes moveToApie {
+    to {
+      left: 100px;
     }
-    /*ANIMATIONS FOR THE SLIDING ROOF*/
-    .animationToApieMus {
-        animation: moveToApie 0.6s forwards ease-in-out;
+  }
+  .animationToKontaktai {
+    animation: moveToKontaktai 0.6s forwards ease-in-out;
+  }
+  @keyframes moveToKontaktai {
+    to {
+      left: 435px;
     }
-    @keyframes moveToApie {
-        to {
-            left: 100px;
-        }
+  }
+  .animationToDirbameSu {
+    animation: moveToDirbameSu 0.6s forwards ease-in-out;
+  }
+  @keyframes moveToDirbameSu {
+    to {
+      left: 768px;
     }
-    .animationToKontaktai {
-        animation: moveToKontaktai 0.6s forwards ease-in-out;
-    }
-    @keyframes moveToKontaktai {
-        to {
-            left: 435px;
-        }
-    }
-    .animationToDirbameSu {
-        animation: moveToDirbameSu 0.6s forwards ease-in-out;
-    }
-    @keyframes moveToDirbameSu {
-        to {
-            left: 768px;
-        }
-    }
-    /*CONTENT STYLING//////////////*/
-    .contentApie {
-        font-size: 1.2em;
-        padding: 0 15vw;
-    }
-    .contentApie h1 {
-        text-align: center;
-    }
-    .contentKontaktai {
-        margin-top: 15vh;
-        display: grid;
-        grid-template-columns: repeat(40, 1fr);
-        padding: 0;
-    }
-    #contactInfo {
-        grid-column: 13/26;
-    }
-    #map {
-        width: 27vw;
-        grid-column-start: 27;
-    }
-    .contentApie,
-    .contentKontaktai,
-    .dirbameSuContent {
-        margin-top: 15vh;
-        padding-bottom: 60px;
-    }
-    .dirbameSuContent {
-        display: grid;
-        margin-left: 120px;
-        margin-right: 120px;
-        position: relative;
-        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-    }
-    .dirbameSuContent img {
-        margin: auto;
-        margin-bottom: 40px;
-        width: 300px;
-    }
-
-
-
+  }
+  /*CONTENT STYLING//////////////*/
+  .contentApie {
+    font-size: 1.2em;
+    padding: 0 15vw;
+  }
+  .contentApie h1 {
+    text-align: center;
+  }
+  .contentKontaktai {
+    margin-top: 15vh;
+    display: grid;
+    grid-template-columns: repeat(40, 1fr);
+    padding: 0;
+  }
+  #contactInfo {
+    /* grid-column: 13/26; */
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+  }
+  #map {
+    width: 27vw;
+    grid-column-start: 27;
+  }
+  .contentApie,
+  .contentKontaktai,
+  .dirbameSuContent {
+    margin-top: 15vh;
+    padding-bottom: 60px;
+  }
+  .dirbameSuContent {
+    display: grid;
+    margin-left: 120px;
+    margin-right: 120px;
+    position: relative;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  }
+  .dirbameSuContent img {
+    margin: auto;
+    margin-bottom: 40px;
+    width: 300px;
+  }
 }
 /*ADAPTING THE ANIMATION AND CONTACT INFO TO SMALLER VIEWPORT////////////////*/
 @media only screen and (min-width: 1100px) and (max-width: 1411px) {
-    #desktopNav {
-        width: 700px;
-    }
-    #navRoof {
-        left: 66px;
-        width: 100px;
-        top: -30px;
-    }
+  #desktopNav {
+    width: 700px;
+  }
+  #navRoof {
+    left: 66px;
+    width: 100px;
+    top: -30px;
+  }
 
-    @keyframes moveToApie {
-        to {
-            left: 66px;
-        }
+  @keyframes moveToApie {
+    to {
+      left: 66px;
     }
-    @keyframes moveToKontaktai {
-        to {
-            left: 299px;
-        }
+  }
+  @keyframes moveToKontaktai {
+    to {
+      left: 299px;
     }
-    @keyframes moveToDirbameSu {
-        to {
-            left: 533px;
-        }
+  }
+  @keyframes moveToDirbameSu {
+    to {
+      left: 533px;
     }
-    #contactInfo {
-        grid-column: 13/24;
-    }
-    #map {
-        width: 25vw;
-        grid-column-start: 30;
-    }
+  }
+  #contactInfo {
+    grid-column: 13/24;
+  }
+  #map {
+    width: 25vw;
+    grid-column-start: 30;
+  }
 }
-
 
 /*CLASS FOR NO DISPLAY*/
 
 .dontDisplay {
-    display: none;
+  display: none;
 }
